@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo:: MiCRO INTERFACE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="http://localhost:8080/styles.css" rel="stylesheet">
+
+  <script src="http://localhost:8080/index.js" async></script>
+  <script src="http://localhost:8081/index.js" async></script>
+  <script src="http://localhost:8082/index.js" async></script>
+</head>
+<body>
+
+<thx-header></thx-header>
+<thx-categories>
+  <div class="cat-content">
+    <thx-clients></thx-clients>
+  </div>
+</thx-categories>
+
+<script>
+
+  const items = [];
+  const header = document.querySelector('thx-header');
+  const categories = document.querySelector('thx-categories');
+  let isMenuOpen = false;
+
+
+  header.addEventListener('toggle', (e) => {
+    toggleMenu();
+  });
+
+  function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    categories.isMenuOpen = isMenuOpen;
+  }
+
+</script>
+</body>
+</html>

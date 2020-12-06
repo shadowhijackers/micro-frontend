@@ -1,0 +1,86 @@
+::ng-deep {
+  app-clients-profile {
+    .clients-profile {
+      padding: 24px;
+      background: #fff;
+      color: #444;
+
+      &__img {
+        width: 194px;
+        height: 194px;
+        background: rgb(209 209 209);
+      }
+    }
+
+    .contact-info {
+      padding: 0 24px;
+    }
+
+    .clients__headline {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      color: rgb(135 134 134);
+      margin: 0;
+      letter-spacing: 1.2px;
+    }
+
+    .clients__info-block {
+      margin-top: 16px;
+
+      p {
+        color: #4e4e4e;
+        display: flex;
+        margin: 8px 0;
+        align-items: center;
+
+        span {
+          margin: 0 8px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 15px;
+          letter-spacing: .4px;
+          color: rgb(98 98 98);
+        }
+
+        .mat-icon{
+          height: 18px;
+          width: 18px;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .clients__name-block {
+      margin-top: 24px;
+    }
+
+    .clients__name-highlights {
+      display: flex;
+      margin-top: 4px;
+      color: #0c0;
+      font-weight: 500;
+
+      .mat-icon {
+        height: 12px;
+        width: 12px;
+        font-size: 11px;
+      }
+
+      span {
+        font-size: 11px;
+        margin-left: 4px;
+      }
+    }
+
+    .client__basic-info {
+      margin-top: 24px;
+    }
+
+    .primary{
+      color: #080 !important;
+    }
+  }
+}

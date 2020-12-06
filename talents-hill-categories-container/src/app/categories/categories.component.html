@@ -1,0 +1,16 @@
+<mat-sidenav-container [style.left.px]="isMenuOpen?  58: 58" class="sh-home__container" hasBackdrop="false">
+  <mat-sidenav-content>
+    {{isMenuOpen}}
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<mat-sidenav #sidenav class="sh-home__sidenav mat-elevation-z5 sh-theme-bg" mode="side" [opened]="true">
+  <mat-nav-list>
+
+    <a *ngFor="let data of navDatas; let idx=index" routerLink="." [class.active]="idx == 1" mat-list-item>
+      <mat-icon>{{data.icon}}</mat-icon>
+      <span class="side-nav__label" [ngStyle]="{'display': isMenuOpen? 'block': 'none'}">{{data.name}}</span></a>
+
+  </mat-nav-list>
+</mat-sidenav>

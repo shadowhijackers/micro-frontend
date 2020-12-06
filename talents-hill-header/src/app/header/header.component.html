@@ -1,0 +1,45 @@
+<mat-toolbar class="header-block mat-elevation-z4 sh-theme-primary">
+  <mat-toolbar-row fxLayoutAlign="space-between center">
+    <section fxLayoutAlign="start center">
+      <button (click)="menuToggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="header-block__headline mat-headline">
+        <b>Talents</b> Hill
+      </span>
+    </section>
+
+    <section fxLayout="row" fxLayoutAlign="start center">
+      <button class="btn" mat-icon-button>
+        <mat-icon>help</mat-icon>
+      </button>
+      <button class="btn" mat-icon-button>
+        <mat-icon>message</mat-icon>
+      </button>
+      <mat-icon class="btn">notifications</mat-icon>
+    </section>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row class="header-block__navigation-row" fxLayoutAlign="space-between center">
+    <section class="header-block__breadcrumb" fxLayout="row" fxLayoutAlign="start center">
+      <span>CATEGORIES</span>
+
+      <mat-icon>arrow_right</mat-icon>
+      <span>CLIENTS</span>
+
+      <mat-icon>arrow_right</mat-icon>
+      <span>NEW CLIENT</span>
+    </section>
+
+    <section>
+      <a href="javascript: void(0)" class="btn" mat-button>HOME</a>
+      <a href="javascript: void(0)" class="btn is-active" mat-button>CATEGORIES</a>
+      <a href="javascript: void(0)" class="btn" mat-button>BUY SERVICE</a>
+      <a href="javascript: void(0)" class="btn" mat-button>FIND A FREELANCER</a>
+      <button class="header-block__agency-name-btn btn" mat-button>
+        <mat-icon>person</mat-icon>
+        Agency Name
+      </button>
+    </section>
+  </mat-toolbar-row>
+</mat-toolbar>

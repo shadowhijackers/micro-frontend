@@ -1,0 +1,69 @@
+::ng-deep {
+  :root {
+    --header-height: 112px;
+    --primary: green;
+    --primary-400: #01c601;
+  }
+
+  thx-header {
+
+    .header-block {
+
+      &__navigation-row {
+        box-shadow: -0.1px 6px 5px 0 #e0e0e0;
+      }
+
+      &__breadcrumb {
+        padding-right: 8px;
+        color: #888;
+
+        > span {
+          font-size: 13px;
+          color: #888;
+        }
+      }
+
+      .is-active {
+        color: #01c601 !important;
+      }
+
+      &__agency-name-btn {
+        background: #fff;
+        border: 1px solid;
+        padding-left: 8px;
+        margin-left: 8px;
+      }
+
+      &__headline {
+        font-weight: 600;
+        margin: 0 8px !important;
+        letter-spacing: 0.4px;
+        font-size: 26px;
+
+        b {
+          letter-spacing: 1.4px;
+          color: var(--primary-400);
+        }
+      }
+
+      .btn {
+        color: #444;
+
+        :hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    .mat-toolbar-row, .mat-toolbar-single-row {
+      height: 52px !important;
+    }
+
+
+    .mat-toolbar {
+      min-height: 52px !important;
+      background: rgb(255 255 255) !important;
+    }
+  }
+
+}

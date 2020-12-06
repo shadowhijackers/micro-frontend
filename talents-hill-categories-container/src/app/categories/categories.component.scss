@@ -1,0 +1,42 @@
+.sh-home {
+  &__container {
+    top: var(--header-height);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__sidenav {
+    top: calc(var(--header-height) - 7px);
+    background: #333;
+    color: white;
+    box-shadow: 2px 3.1px 5px #bdb0b0;
+
+    .mat-icon {
+      color: #fff;
+    }
+
+    .side-nav__label {
+      font-size: 13px;
+      color: rgb(255 255 255);
+      margin-left: 8px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+    }
+  }
+}
+
+::ng-deep {
+  thx-categories {
+    .mat-list-base .mat-list-item {
+      font-size: 0 !important;
+      border-bottom: .2px solid rgb(138 138 138);
+    }
+  }
+}
+
+.active{
+  background: rgb(0 255 0)
+}
